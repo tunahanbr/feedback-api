@@ -15,7 +15,6 @@ This API provides endpoints for sending and retrieving feedback data. It uses Po
   * `project`: string (min length 3)
   * `feedback`: string (min length 10)
   * `rating`: number (min 1, max 5)
-  * `timestamp`: string (date-time format)
 #### Response:
   * `{ message: 'Data received at [timestamp]' }`
 
