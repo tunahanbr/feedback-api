@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  feedback-api:
+    build: .
+    ports:
+      - "0.0.0.0:3002:3002"  # Bind to all network interfaces
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - NODE_ENV=production
+    command: ["node", "server.mjs"]

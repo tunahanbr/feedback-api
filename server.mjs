@@ -83,7 +83,7 @@ fastify.delete('/delete-feedback/:id',async (request, response) => {
 })
 
 // Start the server
-fastify.listen({ port: 3001 }, (err, address) => {
+fastify.listen({ port: 3002 }, (err, address) => {
     if (err) {
       fastify.log.error(err);
       process.exit(1);
